@@ -26,12 +26,13 @@
             
             <div id="nav">
                 <ul>
-                    <li><img onclick="openNav()" src="menu-icon.png" id="icon"></li>
+                    <li><img onclick="openNav()" src="menu-icon.png" id="icon1"></li>
                     <li><a>My Projects</a></li>
+                    <li><img src="sun.png" id="icon2"></li>
                 </ul>
             </div>
 
-            <div id="picture1">Picture1
+            <div href="#" id="picture1">Picture1
                 
             </div>
 
@@ -46,7 +47,7 @@
             <div id="picture4">Picture4
                 
             </div>
- 
+
             <div id="picture5">Picture5
                 
             </div>
@@ -64,13 +65,29 @@
             </div>
             <div id="left_space"></div>
             <div id="right_space"></div>
-            <div id="content1">Content1</div>
-            <div id="content2">Content2</div>
-            <div id="content3">Content3</div>
-            <div id="content4">Content4</div>
-            <div id="content5">Content5</div>
-            <div id="content6">Content6</div>
-            <div id="content7">Content7</div>
+            <div id="content1">
+                <ul>
+                    <li><h2><a href="#">Retro Pong Game</a></h2></li>
+                </ul>
+            </div>
+            <div id="content2">
+                <h2>Content2</h2>
+            </div>
+            <div id="content3">
+                <h2>Content3</h2>
+            </div>
+            <div id="content4">
+                <h2>Content4</h2>
+            </div>
+            <div id="content5">
+                <h2>Content5</h2>
+            </div>
+            <div id="content6">
+                <h2>Content6</h2>
+            </div>
+            <div id="content7">
+                <h2>Content7</h2>
+            </div>
             <div id="content8"></div>
 
             <div id="footer">
@@ -86,6 +103,18 @@
     </body>
 
     <script>
+
+        var icon = document.getElementById("icon2");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("light-theme")
+            if(document.body.classList.contains("light-theme")){
+                icon.src = "moon.png";
+            }else{
+                icon.src = "sun.png";
+            }
+        }
+
 
         function openNav() {
             document.getElementById("sidenav").style.width = "250px";
