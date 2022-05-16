@@ -361,14 +361,14 @@ body{
     }
     
     .container #main #icon{
-        width:30px;
+        width:60px;
         cursor:pointer;
     }
     
     
     .container #navbar {
         background-color: var(--primary-box-color);
-        font-size: 25px;
+        font-size: 40px;
         grid-area: nav;
         text-transform: uppercase;
         border-radius: var(--main-radius);
@@ -382,7 +382,7 @@ body{
         margin-left: auto; 
         margin-right: auto;
         align-items: center;
-        padding: 1em 4em;
+        padding: 1em 1em;
     }
     
     .container #navbar ul li a {
@@ -465,7 +465,7 @@ body{
         grid-area: footer;
         border-radius: var(--main-radius);
         padding-top: 10px;
-        font-size: 20px;
+        font-size: 30px;
         height: 8vh;
     
     }
@@ -484,7 +484,7 @@ body{
         color: var(--primary-text-color);
         position: relative;
         transition: all ease-in-out 250ms;
-        font-size:30px;
+        font-size:40px;
     }
     
     .container #footer ul li:first-child {
