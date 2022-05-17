@@ -6,6 +6,23 @@
     --primary-background-color: #232e33;
     --primary-box-color: #192024;
     --primary-text-color: #FBFAF5;
+
+
+    /* color variables */
+    --clr-primary: #d50000;
+    --clr-primary-hover: #29e6a7;
+    --clr-primary-dark: #039d69;
+    --clr-gray100: #f0f7f8;
+    --clr-gray200: #cfd8dc;
+    --clr-gray300: #a7b7be;
+    --clr-gray400: #6b7e86;
+    --clr-gray500: #425a65;
+
+    /*   border radius */
+    --radius: 0.2rem;
+
+    /*   font size   */
+    --font-size: 2.5rem;
 }
 
 
@@ -32,21 +49,21 @@ body{
 .container{
     display:grid;
     height:relative;
-    grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-columns: 0.2fr 0.6fr 0.6fr 0.6fr 0.6fr 0.2fr;
     grid-template-rows: 0.2fr 0.2fr 4fr 0.2fr 4fr 0.4fr;
     grid-template-areas: 
     "nav nav nav nav nav nav"
-    "left_space content1 content2 content3 content4 right_space"
-    "left_space picture1 picture2 picture3 picture4 right_space"
-    "left_space content5 content6 content7 content8 right_space"
-    "left_space picture5 picture6 picture7 picture8 right_space"
+    "left_space card1 card2 card3 card4 right_space"
+    "left_space card1 card2 card3 card4 right_space"
+    "left_space card5 card6 card7 card8 right_space"
+    "left_space card5 card6 card7 card8 right_space"
     "left_of_footer footer footer footer footer right_of_footer";
 
     grid-gap: 5.0rem;
     font-family: "Inter", sans-serif;
     font-size: 12px;
     font-weight:800;
-    color: #004d40;
+    color: var(--primary-text-color);
     text-align:center;
 }
 
@@ -66,14 +83,487 @@ body{
     
 }
 
-#picture1{
+.card1{
     /* background: url(pong-01.png);
     background-size:cover; */
-    grid-area: picture1;
+    background: var(--primary-box-color);
+    grid-area:card1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__image1 {
+    height:12rem;
+    width: 100%;
+    object-fit: cover;
+    
+
+}
+
+.card__title1 {
+    padding:1rem;
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.card__desciption1 {
+    padding:0 1rem;
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.card__btn1 {
+    cursor: pointer;
+    padding:1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size:1rem;
+    border:2px solid var(--pink);
+    background: transparent;
+    color:var(--pink);
+    border-radius: var(--main-radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card1:hover {
+    transform: scale(1.02);
     
 }
+
+
+.card1:hover .card__btn1{
+    background: var(--pink);
+    color:white;
+}
+
+
+
+
+.card2{
+    /* background: url(pong-01.png);
+    background-size:cover; */
+    background: var(--primary-box-color);
+    grid-area:card2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__image2 {
+    height:12rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card__title2 {
+    padding:1rem;
+    color: var(--pink)
+
+}
+
+.card__desciption2 {
+    padding:0 1rem
+
+}
+
+.card__btn2 {
+    cursor: pointer;
+    padding:1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size:1rem;
+    border:2px solid var(--pink);
+    background: transparent;
+    color:var(--pink);
+    border-radius: var(--main-radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card2:hover {
+    transform: scale(1.02);
+    
+}
+
+
+.card2:hover .card__btn2{
+    background: var(--pink);
+    color:white;
+}
+
+
+
+
+.card3{
+    /* background: url(pong-01.png);
+    background-size:cover; */
+    background: var(--primary-box-color);
+    grid-area:card3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__image3 {
+    height:12rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card__title3 {
+    padding:1rem;
+    color: var(--pink)
+}
+
+.card__desciption3 {
+    padding:0 1rem
+
+}
+
+.card__btn3 {
+    cursor: pointer;
+    padding:1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size:1rem;
+    border:2px solid var(--pink);
+    background: transparent;
+    color:var(--pink);
+    border-radius: var(--main-radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card3:hover {
+    transform: scale(1.02);
+    
+}
+
+
+.card3:hover .card__btn3{
+    background: var(--pink);
+    color:white;
+}
+
+
+
+
+.card4{
+    /* background: url(pong-01.png);
+    background-size:cover; */
+    background: var(--primary-box-color);
+    grid-area:card4;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__image4 {
+    height:12rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card__title4 {
+    padding:1rem;
+    color: var(--pink)
+}
+
+.card__desciption4 {
+    padding:0 1rem
+
+}
+
+.card__btn4 {
+    cursor: pointer;
+    padding:1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size:1rem;
+    border:2px solid var(--pink);
+    background: transparent;
+    color:var(--pink);
+    border-radius: var(--main-radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card4:hover {
+    transform: scale(1.02);
+    
+}
+
+
+.card4:hover .card__btn4{
+    background: var(--pink);
+    color:white;
+}
+
+
+
+
+.card5{
+    /* background: url(pong-01.png);
+    background-size:cover; */
+    background: var(--primary-box-color);
+    grid-area:card5;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__image5 {
+    height:12rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card__title5 {
+    padding:1rem;
+    color: var(--pink)
+}
+
+.card__desciption5 {
+    padding:0 1rem
+
+}
+
+.card__btn5 {
+    cursor: pointer;
+    padding:1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size:1rem;
+    border:2px solid var(--pink);
+    background: transparent;
+    color:var(--pink);
+    border-radius: var(--main-radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card5:hover {
+    transform: scale(1.02);
+    
+}
+
+
+.card5:hover .card__btn5{
+    background: var(--pink);
+    color:white;
+}
+
+
+
+
+.card6{
+    /* background: url(pong-01.png);
+    background-size:cover; */
+    background: var(--primary-box-color);
+    grid-area:card6;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__image6 {
+    height:12rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card__title6 {
+    padding:1rem;
+    color: var(--pink)
+}
+
+.card__desciption6 {
+    padding:0 1rem
+
+}
+
+.card__btn6 {
+    cursor: pointer;
+    padding:1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size:1rem;
+    border:2px solid var(--pink);
+    background: transparent;
+    color:var(--pink);
+    border-radius: var(--main-radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card6:hover {
+    transform: scale(1.02);
+    
+}
+
+
+.card6:hover .card__btn6{
+    background: var(--pink);
+    color:white;
+}
+
+
+
+
+.card7{
+    /* background: url(pong-01.png);
+    background-size:cover; */
+    background: var(--primary-box-color);
+    grid-area:card7;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__image7 {
+    height:12rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card__title7 {
+    padding:1rem;
+    color: var(--pink)
+}
+
+.card__desciption7 {
+    padding:0 1rem
+
+}
+
+.card__btn7 {
+    cursor: pointer;
+    padding:1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size:1rem;
+    border:2px solid var(--pink);
+    background: transparent;
+    color:var(--pink);
+    border-radius: var(--main-radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card7:hover {
+    transform: scale(1.02);
+    
+}
+
+
+.card7:hover .card__btn7{
+    background: var(--pink);
+    color:white;
+}
+
+
+
+
+.card8{
+    /* background: url(pong-01.png);
+    background-size:cover; */
+    background: var(--primary-box-color);
+    grid-area:card8;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__image8 {
+    height:12rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card__title8 {
+    padding:1rem;
+    color: var(--pink)
+}
+
+.card__desciption8 {
+    padding:0 1rem
+
+}
+
+.card__btn8 {
+    cursor: pointer;
+    padding:1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size:1rem;
+    border:2px solid var(--pink);
+    background: transparent;
+    color:var(--pink);
+    border-radius: var(--main-radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card8:hover {
+    transform: scale(1.02);
+    
+}
+
+
+.card8:hover .card__btn8{
+    background: var(--pink);
+    color:white;
+}
+
 
 #picture2{
     background: var(--primary-box-color);
@@ -405,38 +895,38 @@ body{
 
 @media only screen and (max-width:1000px) {
     .container{
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.8fr;
         grid-template-rows: 
-        0.6fr 
-        0.2fr 0.5fr 
-        0.2fr 0.5fr 
-        0.2fr 0.5fr 
-        0.2fr 0.5fr 
-        0.2fr 0.5fr 
-        0.2fr 0.5fr 
-        0.2fr 0.5fr 
-        0.2fr 0.5fr 
+        0.2fr 
+        2fr 2fr 
+        2fr 2fr 
+        2fr 2fr 
+        2fr 2fr 
+        2fr 2fr 
+        2fr 2fr 
+        2fr 2fr 
+        2fr 2fr 
         0.1fr 0.1fr 
         0.1fr;
 
         grid-template-areas:
         "nav"
-        "content1"
-        "picture1"
-        "content2"
-        "picture2"
-        "content3"
-        "picture3"
-        "content4"
-        "picture4"
-        "content5"
-        "picture5"
-        "content6"
-        "picture6"
-        "content7"
-        "picture7"
-        "content8"
-        "picture8"
+        "card1"
+        "card1"
+        "card2"
+        "card2"
+        "card3"
+        "card3"
+        "card4"
+        "card4"
+        "card5"
+        "card5"
+        "card6"
+        "card6"
+        "card7"
+        "card7"
+        "card8"
+        "card8"
         "left_space"
         "right_space"
         "footer";
@@ -445,8 +935,9 @@ body{
         font-family: "Inter", sans-serif;
         font-size: 12px;
         font-weight:800;
-        color: #004d40;
+        color: var(--primary-text-color);
         text-align:center;
+        justify-content: center;
     }
 
         
@@ -466,9 +957,496 @@ body{
         
     }
 
-    #picture1{
+        
+    .card1{
         /* background: url(pong-01.png);
-        background-size:contain; */
+        background-size:cover; */
+        background: var(--primary-box-color);
+        grid-area:card1;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        overflow: hidden;
+        box-shadow: 0px 2px 20px var(--clr-gray500);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: transform 200ms ease-in;
+        
+    }
+
+    .card__image1 {
+        height:12rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .card__title1 {
+        padding:1rem;
+        color: var(--pink);
+        text-decoration: none;
+    }
+
+    .card__desciption1 {
+        text-decoration: none;
+        padding:0 1rem;
+        color: var(--pink);
+    }
+
+    .card__btn1 {
+        cursor: pointer;
+        padding:1rem;
+        font-family: inherit;
+        font-weight: bold;
+        font-size:var(--font-size);
+        border:4px solid var(--pink);
+        background: transparent;
+        color:var(--pink);
+        border-radius: var(--main-radius);
+        transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+    .card1:hover {
+        transform: scale(1.02);
+        
+    }
+
+
+    .card1:hover .card__btn1{
+        background: var(--pink);
+        color:white;
+    }
+
+
+
+
+    .card2{
+        /* background: url(pong-01.png);
+        background-size:cover; */
+        background: var(--primary-box-color);
+        grid-area:card2;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        overflow: hidden;
+        box-shadow: 0px 2px 20px var(--clr-gray500);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: transform 200ms ease-in;
+    }
+
+    .card__image2 {
+        height:12rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .card__title2 {
+        padding:1rem;
+        color: var(--pink);
+        
+
+    }
+
+    .card__desciption2 {
+        padding:0 1rem;
+        color: var(--pink);
+    }
+
+    .card__btn2 {
+        cursor: pointer;
+        padding:1rem;
+        font-family: inherit;
+        font-weight: bold;
+        font-size:var(--font-size);
+        border:4px solid var(--pink);
+        background: transparent;
+        color:var(--pink);
+        border-radius: var(--main-radius);
+        transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+    .card2:hover {
+        transform: scale(1.02);
+        
+    }
+
+
+    .card2:hover .card__btn2{
+        background: var(--pink);
+        color:white;
+    }
+
+
+
+
+    .card3{
+        /* background: url(pong-01.png);
+        background-size:cover; */
+        background: var(--primary-box-color);
+        grid-area:card3;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        overflow: hidden;
+        box-shadow: 0px 2px 20px var(--clr-gray500);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: transform 200ms ease-in;
+    }
+
+    .card__image3 {
+        height:12rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .card__title3 {
+        padding:1rem;
+        color: var(--pink);
+    }
+
+    .card__desciption3 {
+        padding:0 1rem;
+        color: var(--pink);
+    }
+
+    .card__btn3 {
+        cursor: pointer;
+        padding:1rem;
+        font-family: inherit;
+        font-weight: bold;
+        font-size:var(--font-size);
+        border:4px solid var(--pink);
+        background: transparent;
+        color:var(--pink);
+        border-radius: var(--main-radius);
+        transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+    .card3:hover {
+        transform: scale(1.02);
+        
+    }
+
+
+    .card3:hover .card__btn3{
+        background: var(--pink);
+        color:white;
+    }
+
+
+
+
+    .card4{
+        /* background: url(pong-01.png);
+        background-size:cover; */
+        background: var(--primary-box-color);
+        grid-area:card4;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        overflow: hidden;
+        box-shadow: 0px 2px 20px var(--clr-gray500);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: transform 200ms ease-in;
+    }
+
+    .card__image4 {
+        height:12rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .card__title4 {
+        padding:1rem;
+        color: var(--pink);
+    }
+
+    .card__desciption4 {
+        padding:0 1rem;
+        color: var(--pink);
+    }
+
+    .card__btn4 {
+        cursor: pointer;
+        padding:1rem;
+        font-family: inherit;
+        font-weight: bold;
+        font-size:var(--font-size);
+        border:4px solid var(--pink);
+        background: transparent;
+        color:var(--pink);
+        border-radius: var(--main-radius);
+        transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+    .card4:hover {
+        transform: scale(1.02);
+        
+    }
+
+
+    .card4:hover .card__btn4{
+        background: var(--pink);
+        color:white;
+    }
+
+
+
+
+    .card5{
+        /* background: url(pong-01.png);
+        background-size:cover; */
+        background: var(--primary-box-color);
+        grid-area:card5;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        overflow: hidden;
+        box-shadow: 0px 2px 20px var(--clr-gray500);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: transform 200ms ease-in;
+    }
+
+    .card__image5 {
+        height:12rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .card__title5 {
+        padding:1rem;
+        color: var(--pink);
+    }
+
+    .card__desciption5 {
+        padding:0 1rem;
+        color: var(--pink);
+    }
+
+    .card__btn5 {
+        cursor: pointer;
+        padding:1rem;
+        font-family: inherit;
+        font-weight: bold;
+        font-size:var(--font-size);
+        border:4px solid var(--pink);
+        background: transparent;
+        color:var(--pink);
+        border-radius: var(--main-radius);
+        transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+    .card5:hover {
+        transform: scale(1.02);
+        
+    }
+
+
+    .card5:hover .card__btn5{
+        background: var(--pink);
+        color:white;
+    }
+
+
+
+
+    .card6{
+        /* background: url(pong-01.png);
+        background-size:cover; */
+        background: var(--primary-box-color);
+        grid-area:card6;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        overflow: hidden;
+        box-shadow: 0px 2px 20px var(--clr-gray500);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: transform 200ms ease-in;
+    }
+
+    .card__image6 {
+        height:12rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .card__title6 {
+        padding:1rem;
+        color: var(--pink);
+    }
+
+    .card__desciption6 {
+        padding:0 1rem;
+        color: var(--pink);
+    }
+
+    .card__btn6 {
+        cursor: pointer;
+        padding:1rem;
+        font-family: inherit;
+        font-weight: bold;
+        font-size:var(--font-size);
+        border:4px solid var(--pink);
+        background: transparent;
+        color:var(--pink);
+        border-radius: var(--main-radius);
+        transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+    .card6:hover {
+        transform: scale(1.02);
+        
+    }
+
+
+    .card6:hover .card__btn6{
+        background: var(--pink);
+        color:white;
+    }
+
+
+
+
+    .card7{
+        /* background: url(pong-01.png);
+        background-size:cover; */
+        background: var(--primary-box-color);
+        grid-area:card7;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        overflow: hidden;
+        box-shadow: 0px 2px 20px var(--clr-gray500);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: transform 200ms ease-in;
+    }
+
+    .card__image7 {
+        height:12rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .card__title7 {
+        padding:1rem;
+        color: var(--pink);
+    }
+
+    .card__desciption7 {
+        padding:0 1rem;
+        color: var(--pink);
+    }
+
+    .card__btn7 {
+        cursor: pointer;
+        padding:1rem;
+        font-family: inherit;
+        font-weight: bold;
+        font-size:var(--font-size);
+        border:4px solid var(--pink);
+        background: transparent;
+        color:var(--pink);
+        border-radius: var(--main-radius);
+        transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+    .card7:hover {
+        transform: scale(1.02);
+        
+    }
+
+
+    .card7:hover .card__btn7{
+        background: var(--pink);
+        color:white;
+    }
+
+
+
+
+    .card8{
+        /* background: url(pong-01.png);
+        background-size:cover; */
+        background: var(--primary-box-color);
+        grid-area:card8;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        overflow: hidden;
+        box-shadow: 0px 2px 20px var(--clr-gray500);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: transform 200ms ease-in;
+    }
+
+    .card__image8 {
+        height:12rem;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .card__title8 {
+        padding:1rem;
+        color: var(--pink)
+    }
+
+    .card__desciption8 {
+        padding:0 1rem;
+        color: var(--pink)
+    }
+
+    .card__btn8 {
+        cursor: pointer;
+        padding:1rem;
+        font-family: inherit;
+        font-weight: bold;
+        font-size:var(--font-size);
+        border:4px solid var(--pink);
+        background: transparent;
+        color:var(--pink);
+        border-radius: var(--main-radius);
+        transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+    .card8:hover {
+        transform: scale(1.02);
+        
+    }
+
+
+    .card8:hover .card__btn8{
+        background: var(--pink);
+        color:white;
+    }
+
+
+
+
+/* 
+    #picture1{
+        background: url(pong-01.png);
+        background-size:contain;
         grid-area: picture1;
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
@@ -529,7 +1507,7 @@ body{
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
         
-    }
+    } */
 
     .container #nav {
         background: var(--primary-box-color);
@@ -629,7 +1607,7 @@ body{
         margin-left: 50px;
     }
 
-
+/* 
     #content1{
         background: var(--pink);
         grid-area: content1;
@@ -692,7 +1670,7 @@ body{
         grid-area: content8;
         border-radius: var(--main-radius);
         padding-top: var(--main-padding);
-    }
+    } */
 
 
 
