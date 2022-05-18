@@ -17,6 +17,7 @@
     --clr-gray300: #a7b7be;
     --clr-gray400: #6b7e86;
     --clr-gray500: #425a65;
+    --shadow-color:#151515;
 
     /*   border radius */
     --radius: 0.2rem;
@@ -31,6 +32,7 @@
     --primary-background-color: #FBFAF5;
     --primary-box-color: #d0d0d0;
     --primary-text-color: #232e33;
+    --shadow-color:#425a65;
 }
 
 
@@ -91,7 +93,7 @@ body{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     overflow: hidden;
-    box-shadow: 0px 2px 20px var(--clr-gray500);
+    box-shadow: 0px 2px 20px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -154,7 +156,7 @@ body{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     overflow: hidden;
-    box-shadow: 0px 2px 20px var(--clr-gray500);
+    box-shadow: 0px 2px 20px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -215,7 +217,7 @@ body{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     overflow: hidden;
-    box-shadow: 0px 2px 20px var(--clr-gray500);
+    box-shadow: 0px 2px 20px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -275,7 +277,7 @@ body{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     overflow: hidden;
-    box-shadow: 0px 2px 20px var(--clr-gray500);
+    box-shadow: 0px 2px 20px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -335,7 +337,7 @@ body{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     overflow: hidden;
-    box-shadow: 0px 2px 20px var(--clr-gray500);
+    box-shadow: 0px 2px 20px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -395,7 +397,7 @@ body{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     overflow: hidden;
-    box-shadow: 0px 2px 20px var(--clr-gray500);
+    box-shadow: 0px 2px 20px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -455,7 +457,7 @@ body{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     overflow: hidden;
-    box-shadow: 0px 2px 20px var(--clr-gray500);
+    box-shadow: 0px 2px 20px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -515,7 +517,7 @@ body{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     overflow: hidden;
-    box-shadow: 0px 2px 20px var(--clr-gray500);
+    box-shadow: 0px 2px 20px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -895,7 +897,7 @@ body{
 
 @media only screen and (max-width:1000px) {
     .container{
-        grid-template-columns: 0.8fr;
+        grid-template-columns: 0.7fr;
         grid-template-rows: 
         0.2fr 
         2fr 2fr 
@@ -992,6 +994,7 @@ body{
         text-decoration: none;
         padding:0 1rem;
         color: var(--pink);
+        font-size: 30px;
     }
 
     .card__btn1 {
