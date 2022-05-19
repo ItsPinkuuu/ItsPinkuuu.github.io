@@ -36,7 +36,7 @@ body{
     display:grid;
     height:relative;
     grid-template-columns: 0.2fr 0.5fr 1fr 1fr 0.5fr 0.2fr;
-    grid-template-rows: 5fr 0.2fr 1.2fr 1.4fr 1.6fr 0.4fr;
+    grid-template-rows: 3fr 0.2fr 1.2fr 1.4fr 1.6fr 0.4fr;
     grid-template-areas: 
     "main main main main main main"
     "nav nav nav nav nav nav"
@@ -59,6 +59,7 @@ body{
     grid-area: main;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    
 }
 
 .container #main ul {
