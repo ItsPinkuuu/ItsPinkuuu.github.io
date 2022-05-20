@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+
+<html>
+    <head> 
+
+        <link href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap">
+        <link rel="stylesheet" href="Contact-Me.css">
+        <title>Contact Me</title>
+        <link rel="icon" href="sakura-flower.png" type="image/x-icon">
+
+    </head>
+    <body>
+
+        <!-- <div id="empty_space">empty_space</div> -->
+        <div class="container">
+
+            <div id="sidenav" class="sidenav">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="download-page.html">Downloads</a>
+                <a href="About-Me.html">About Me</a>
+                
+                
+            </div>
+            <!-- Use any element to open the sidenav -->
+            
+            <div id="nav">
+                <ul>
+                    <li><img onclick="openNav()" src="menu-icon.png" id="icon1"></li>
+                    <li><a>Contact Me</a></li>
+                    <li><img src="sun.png" id="icon2"></li>
+                </ul>
+            </div>
+
+
+            <div id="left_space"></div>
+            <div id="right_space"></div>
+            <div id="empty_space1"></div>
+            
+            <div id="content0">
+                <h2>Do you have a question? Just email me and I'll answer it!</h2>
+            </div>
+            <div id="content1">
+                <form method="GET" action="mailto:hampus0405@gmail.com" enctype="text/plain">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Write a subject..">
+                
+                
+                    <label for="message">Message</label>
+                    <textarea type="message" id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                
+                </form>
+            </div>
+
+            <div id="footer">
+                <ul>
+                    <li><a href="Contact-Me.html">Contact Me</a></li>
+                    <li><a>© Copyright    2022</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </body>
+
+    <script>
+
+        var icon = document.getElementById("icon2");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("light-theme")
+            if(document.body.classList.contains("light-theme")){
+                icon.src = "moon.png";
+            }else{
+                icon.src = "sun.png";
+            }
+        }
+
+
+        function openNav() {
+            document.getElementById("sidenav").style.width = "350px";
+        }
+        
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+
+
+    </script>
+</html>

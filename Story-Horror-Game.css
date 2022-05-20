@@ -378,7 +378,7 @@ body{
 }
 
 
-#picture1{
+.picture1{
     background-image: url(Pong\ Code1.png);
     background-size: cover;
     grid-area: picture1;
@@ -386,6 +386,252 @@ body{
     padding-top: var(--main-padding);
     box-shadow: 0px 2px 20px var(--shadow-color);
 }
+
+
+
+
+a.picture1-a img {
+    grid-area: picture1;
+    height: auto;
+    width:440px;
+   
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    margin: 1px 1px 1px 1px;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.picture1-target {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.picture1-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    max-height: 0%;
+    max-width: 0%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.picture1-box-close {
+    display: block;
+    width:50px;
+    height:50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.picture1-box-close:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.picture1-box-close:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.picture1-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    overflow:scroll;
+}
+
+.picture1-target:target img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.picture1-target:target a.picture1-box-close {
+    top: 0;
+}
+
+
+
+
+
+a.picture2-a img {
+    grid-area: picture2;
+    height: auto;
+    width:440px;
+   
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    margin: 1px 1px 1px 1px;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.picture2-target {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.picture2-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    max-height: 0%;
+    max-width: 0%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.picture2-box-close {
+    display: block;
+    width:50px;
+    height:50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.picture2-box-close:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.picture2-box-close:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.picture2-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    overflow:scroll;
+}
+
+.picture2-target:target img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.picture2-target:target a.picture2-box-close {
+    top: 0;
+}
+
+
+
 
 
 #content2{
@@ -424,7 +670,7 @@ body{
     box-shadow: 0px 2px 20px var(--shadow-color);
 }
 
-#picture2{
+.picture2{
     background-image: url(pong\ code2.png);
     background-size: cover;
     grid-area: picture2;
@@ -497,16 +743,8 @@ body{
     transition: all ease-in-out 250ms;
 }
 
+ 
 .container #footer ul li:nth-child(2) {
-    text-decoration: none;
-    color: var(--primary-text-color);
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    transition: all ease-in-out 250ms;
-}
-
-.container #footer ul li:nth-child(3) {
     text-decoration: none;
     color: var(--primary-text-color);
     margin-left: auto;
@@ -746,7 +984,7 @@ body{
     }
     
     
-    #picture1{
+    .picture1{
         background-image: url(Pong\ Code1.png);
         background-size: 1000px;
         grid-area: picture1;
@@ -792,7 +1030,7 @@ body{
         box-shadow: 0px 2px 20px var(--shadow-color);
     }
     
-    #picture2{
+    .picture2{
         background-image: url(pong\ code2.png);
         background-size: 1000px;
         grid-area: picture2;
@@ -865,16 +1103,8 @@ body{
         transition: all ease-in-out 250ms;
     }
 
+    
     .container #footer ul li:nth-child(2) {
-        text-decoration: none;
-        color: var(--primary-text-color);
-        margin-right: auto;
-        margin-left: auto;
-        position: relative;
-        transition: all ease-in-out 250ms;
-    }
-
-    .container #footer ul li:nth-child(3) {
         text-decoration: none;
         color: var(--primary-text-color);
         margin-left: auto;

@@ -378,7 +378,7 @@ body{
 }
 
 
-#picture1{
+.picture1{
     background-image: url(Pong\ Code1.png);
     background-size: cover;
     grid-area: picture1;
@@ -424,7 +424,7 @@ body{
     box-shadow: 0px 2px 20px var(--shadow-color);
 }
 
-#picture2{
+.picture2{
     background-image: url(pong\ code2.png);
     background-size: cover;
     grid-area: picture2;
@@ -496,17 +496,8 @@ body{
     position: relative;
     transition: all ease-in-out 250ms;
 }
-
+ 
 .container #footer ul li:nth-child(2) {
-    text-decoration: none;
-    color: var(--primary-text-color);
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    transition: all ease-in-out 250ms;
-}
-
-.container #footer ul li:nth-child(3) {
     text-decoration: none;
     color: var(--primary-text-color);
     margin-left: auto;
@@ -746,7 +737,7 @@ body{
     }
     
     
-    #picture1{
+    .picture1{
         background-image: url(Pong\ Code1.png);
         background-size: 1000px;
         grid-area: picture1;
@@ -792,7 +783,7 @@ body{
         box-shadow: 0px 2px 20px var(--shadow-color);
     }
     
-    #picture2{
+    .picture2{
         background-image: url(pong\ code2.png);
         background-size: 1000px;
         grid-area: picture2;
@@ -865,16 +856,8 @@ body{
         transition: all ease-in-out 250ms;
     }
 
+    
     .container #footer ul li:nth-child(2) {
-        text-decoration: none;
-        color: var(--primary-text-color);
-        margin-right: auto;
-        margin-left: auto;
-        position: relative;
-        transition: all ease-in-out 250ms;
-    }
-
-    .container #footer ul li:nth-child(3) {
         text-decoration: none;
         color: var(--primary-text-color);
         margin-left: auto;
