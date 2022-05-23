@@ -57,8 +57,8 @@ body{
     "nav nav nav nav nav nav"
     "left_space card1 card2 card3 card4 right_space"
     "left_space card1 card2 card3 card4 right_space"
-    "left_space card5 card6 card7 card8 right_space"
-    "left_space card5 card6 card7 card8 right_space"
+    "left_space card5 card6 card7 empty_space1 right_space"
+    "left_space card5 card6 card7 empty_space1 right_space"
     "left_of_footer footer footer footer footer right_of_footer";
 
     grid-gap: 5.0rem;
@@ -84,6 +84,15 @@ body{
     padding-top: var(--main-padding);
     
 }
+
+#empty_space1 {
+    background: var(--primary-background-color);
+    grid-area: empty_space1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    
+}
+
 
 .card1{
     /* background: url(pong-01.png);
@@ -565,61 +574,6 @@ body{
 }
 
 
-#picture2{
-    background: var(--primary-box-color);
-    grid-area: picture2;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    
-}
-
-#picture3{
-    background: var(--primary-box-color);
-    grid-area: picture3;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    
-}
-
-#picture4{
-    background: var(--primary-box-color);
-    grid-area: picture4;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    
-}
-
-#picture5{
-    background: var(--primary-box-color);
-    grid-area: picture5;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    
-}
-
-#picture6{
-    background: var(--primary-box-color);
-    grid-area: picture6;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    
-}
-
-#picture7{
-    background: var(--primary-box-color);
-    grid-area: picture7;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    
-}
-
-#picture8{
-    background: var(--primary-background-color);
-    grid-area: picture8;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    
-}
 
 .container #nav {
     background: var(--primary-box-color);
@@ -916,8 +870,8 @@ body{
         "card6"
         "card7"
         "card7"
-        "card8"
-        "card8"
+        "empty_space1"
+        "empty_space1"
         "left_space"
         "right_space"
         "footer";
@@ -1435,71 +1389,6 @@ body{
 
 
 
-/* 
-    #picture1{
-        background: url(pong-01.png);
-        background-size:contain;
-        grid-area: picture1;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        
-    }
-
-    #picture2{
-        background: var(--primary-background-color);
-        grid-area: picture2;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        
-    }
-
-    #picture3{
-        background: var(--primary-background-color);
-        grid-area: picture3;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        
-    }
-
-    #picture4{
-        background: var(--primary-background-color);
-        grid-area: picture4;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        
-    }
-
-    #picture5{
-        background: var(--primary-background-color);
-        grid-area: picture5;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        
-    }
-
-    #picture6{
-        background: var(--primary-background-color);
-        grid-area: picture6;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        
-    }
-
-    #picture7{
-        background: var(--primary-background-color);
-        grid-area: picture7;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        
-    }
-
-    #picture8{
-        background: var(--primary-background-color);
-        grid-area: picture8;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        
-    } */
 
     .container #nav {
         background: var(--primary-box-color);
@@ -1598,73 +1487,6 @@ body{
         font-size: 66px;
         margin-left: 50px;
     }
-
-/* 
-    #content1{
-        background: var(--pink);
-        grid-area: content1;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        color: #192024;
-        font-size:30px;
-    }
-
-    #content2{
-        background: var(--pink);
-        grid-area: content2;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        font-size:30px;
-    }
-
-    #content3{
-        background: var(--pink);
-        grid-area: content3;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        font-size:30px;
-    }
-
-    #content4{
-        background: var(--pink);
-        grid-area: content4;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        font-size:30px;
-    }
-
-    #content5{
-        background: var(--pink);
-        grid-area: content5;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        font-size:30px;
-    }
-
-    #content6{
-        background: var(--pink);
-        grid-area: content6;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        font-size:30px;
-    }
-
-    #content7{
-        background: var(--pink);
-        grid-area: content7;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        font-size:30px;
-    }
-
-    #content8{
-        background: var(--primary-background-color);
-        grid-area: content8;
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-    } */
-
-
 
 
 
