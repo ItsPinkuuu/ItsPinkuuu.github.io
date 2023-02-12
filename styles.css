@@ -1,0 +1,133 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.main {
+    background: #1D1C1A;
+    z-index: -1;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    min-height: 100vh;
+    max-height: 100vh;
+    margin: auto auto;
+    height: 90%;
+    text-align: center;
+}
+
+.main__heading {
+    justify-content: center;
+    font-size: 100px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    z-index: 13;
+    position: absolute;
+    user-select: none;
+}
+
+.main__img__containter {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 170px;
+}
+
+.main__img {
+    width: 100px;
+    z-index: 1;
+    user-select: none;
+}
+
+
+
+@media screen and (max-width: 1900px) {
+
+    .main__img__containter {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        gap: 150px;
+    }
+    
+    
+    .main__img {
+        width: 100px;
+        z-index: 1;
+    }
+
+}
+
+
+@media screen and (max-width: 1750px) {
+
+    .main__img__containter {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        gap: 130px;
+    }
+    
+    
+    .main__img {
+        width: 90px;
+        z-index: 1;
+    }
+
+}
+
+@media screen and (max-width: 1650px) {
+
+    .main__img__containter {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        gap: 110px;
+    }
+    
+    
+    .main__img {
+        width: 90px;
+        z-index: 1;
+    }
+
+}
+
+
+@media screen and (max-width: 1450px) {
+
+    .main__img__containter {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        gap: 90px;
+    }
+    
+    
+    .main__img {
+        width: 85px;
+        z-index: 1;
+    }
+
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    .main__img__containter {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        gap: 90px;
+    }
+    
+    
+    .main__img {
+        width: 70px;
+        z-index: 1;
+    }
+
+}
